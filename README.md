@@ -49,11 +49,9 @@ x1 y1 x2 y2 x3 y3 x4 y4 category difficult
 
 - Coordinates are in pixels relative to the top-left corner of the crop (x to the right, y downwards).
 - The first point is the **front-left** corner of the vehicle, and the remaining points follow **clockwise**, so the edge from point 1 to point 2 is the front of the vehicle.
-- There is one category, `car`, covering passenger vehicles. `difficult` is always `0`; both fields exist only for DOTA compatibility.
 - A label file has the same name as its image: `labels/<image_name>.txt` belongs to `images/<image_name>.tif`.
-- Vehicles are small at 50 cm: median size is about 9 × 4.4 px (4.5 × 2.2 m).
 
-`labels_x2/` holds the same boxes multiplied by 2. Use it when you evaluate 2× super-resolved images. For another factor, regenerate the labels with `--sr-scale` (see below).
+`labels_x2/` holds the same boxes multiplied by 2. Use it when you evaluate 2× super-resolved images. For another factor, regenerate the labels with appropriate scale.
 
 
 ## Evaluation protocol
