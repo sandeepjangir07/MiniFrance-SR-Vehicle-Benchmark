@@ -1,0 +1,5 @@
+numpy>=1.21
+Pillow>=9.0
+matplotlib>=3.5
+# Optional: keeps the Lambert-93 georeference when cropping (recommended)
+# rasterio>=1.3
